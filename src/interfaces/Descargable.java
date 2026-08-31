@@ -1,4 +1,5 @@
-public interface Descargable {
+package interfaces;
 
+public interface Descargable {
     void descargar();
 }
