@@ -45,6 +45,8 @@ El sistema implementa los conceptos fundamentales de Programación Orientada a O
 - Polimorfismo.
 - Entrada y salida de información por consola.
 
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ## Tipos de material
 
 La aplicación permite gestionar tres tipos de materiales:
@@ -60,6 +62,8 @@ Todos los materiales heredan de la clase abstracta `MaterialBibliografico`, que 
 - Código.
 - Título.
 - Año de publicación.
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## Organización del proyecto
 
@@ -83,7 +87,7 @@ src/
 └── principal/
     └── Main.java
 ```
-
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 ### Paquete `modelo`
 
 Contiene las clases que representan los materiales bibliográficos.
@@ -108,6 +112,8 @@ Contiene `GestorBiblioteca`, encargado de registrar, consultar, prestar, devolve
 
 Contiene `Main`, que presenta el menú de consola y permite al usuario interactuar con el sistema.
 
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ## Requisitos
 
 Para compilar y ejecutar el proyecto se necesita:
@@ -117,6 +123,8 @@ Para compilar y ejecutar el proyecto se necesita:
 - Ubicarse en la carpeta `src` del proyecto.
 
 Se recomienda utilizar una versión de Java que soporte la sintaxis utilizada por el proyecto.
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## Compilación
 
@@ -147,7 +155,7 @@ Sin embargo, la forma recomendada para ejecutar el proyecto completo y respetar 
 ```bash
 java principal.Main
 ```
-
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 ## Menú de la aplicación
 
 Al ejecutar el programa se muestra el siguiente menú:
@@ -164,7 +172,7 @@ Al ejecutar el programa se muestra el siguiente menú:
 8. Mostrar estadísticas
 0. Salir
 ```
-
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 ### Funcionalidades
 
 **1. Registrar libro**
@@ -218,7 +226,7 @@ Muestra la cantidad total de materiales creados durante la ejecución mediante e
 **0. Salir**
 
 Finaliza la aplicación.
-
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 ## Conceptos de POO evidenciados
 
 ### Encapsulamiento
@@ -283,6 +291,8 @@ material.mostrarInformacion();
 
 cada objeto utiliza la implementación correspondiente a su clase concreta.
 
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ## Verificación básica
 
 Para comprobar el funcionamiento completo se recomienda:
@@ -312,3 +322,4 @@ Para comprobar el funcionamiento completo se recomienda:
 **Laboratorio 1 — Programación Orientada a Objetos**
 
 **Facultad de Ingeniería — 2026/2**
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
