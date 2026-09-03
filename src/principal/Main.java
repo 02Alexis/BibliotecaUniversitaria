@@ -13,52 +13,37 @@ public class Main {
     private static final GestorBiblioteca gestor =
             new GestorBiblioteca();
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
-        int opcion;
+    int opcion = -1;
 
-        do {
+    do {
+        mostrarMenu();
 
-            mostrarMenu();
-
+        try {
             opcion = Integer.parseInt(scanner.nextLine());
 
             switch (opcion) {
-
                 case 1 -> registrarLibro();
-
                 case 2 -> registrarRevista();
-
                 case 3 -> registrarLibroDigital();
-
                 case 4 -> gestor.mostrarTodosLosMateriales();
-
                 case 5 -> prestarMaterial();
-
                 case 6 -> devolverMaterial();
-
                 case 7 -> descargarMaterial();
-
                 case 8 -> gestor.mostrarEstadisticas();
-
-                case 0 ->
-                        System.out.println(
-                                "Saliendo del sistema..."
-                        );
-
-                default ->
-                        System.out.println(
-                                "Opción no válida. Intente de nuevo."
-                        );
+                case 0 -> System.out.println("Saliendo del sistema...");
+                default -> System.out.println("Opción no válida. Intente de nuevo.");
             }
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Por favor ingrese un número válido.");
+            opcion = -1; 
+        } catch (Exception e) {
+            System.out.println("Ocurrió un error inesperado: " + e.getMessage());
+        }
 
-            System.out.println();
-
-        } while (opcion != 0);
-
-        scanner.close();
-    }
-
+    } while (opcion != 0);
+}           
     private static void mostrarMenu() {
 
         System.out.println(
@@ -79,7 +64,7 @@ public class Main {
     }
 
     private static void registrarLibro() {
-
+    try {
         System.out.println("===== REGISTRAR LIBRO =====");
 
         System.out.print("Código: ");
@@ -94,14 +79,19 @@ public class Main {
         System.out.print("Autor: ");
         String autor = scanner.nextLine();
 
-        Libro libro =
-                new Libro(codigo, titulo, anio, autor);
-
+        Libro libro = new Libro(codigo, titulo, anio, autor);
         gestor.registrarMaterial(libro);
+
+        System.out.println("Libro registrado exitosamente.");
+
+    } catch (NumberFormatException e) {
+        System.out.println("Error: El año de publicación debe ser un número entero válido.");
+    } catch (Exception e) {
+        System.out.println("Ocurrió un error inesperado: " + e.getMessage());
     }
-
+}
     private static void registrarRevista() {
-
+    try {
         System.out.println("===== REGISTRAR REVISTA =====");
 
         System.out.print("Código: ");
@@ -126,13 +116,17 @@ public class Main {
                 );
 
         gestor.registrarMaterial(revista);
+        System.out.println("revista registrado exitosamente.");
+    } catch (NumberFormatException e) {
+        System.out.println("Error: El año de publicación debe ser un número entero válido.");
+    } catch (Exception e) {
+        System.out.println("Ocurrió un error inesperado: " + e.getMessage());
+    }
     }
 
     private static void registrarLibroDigital() {
-
-        System.out.println(
-                "===== REGISTRAR LIBRO DIGITAL ====="
-        );
+    try {
+        System.out.println("===== REGISTRAR LIBRO DIGITAL =====");
 
         System.out.print("Código: ");
         String codigo = scanner.nextLine();
@@ -147,20 +141,25 @@ public class Main {
         String autor = scanner.nextLine();
 
         System.out.print("Tamaño del archivo (MB): ");
-        double tamanoArchivo =
-                Double.parseDouble(scanner.nextLine());
+        double tamanoArchivo = Double.parseDouble(scanner.nextLine());
 
-        LibroDigital libroDigital =
-                new LibroDigital(
-                        codigo,
-                        titulo,
-                        anio,
-                        autor,
-                        tamanoArchivo
-                );
+        LibroDigital libroDigital = new LibroDigital(
+                codigo,
+                titulo,
+                anio,
+                autor,
+                tamanoArchivo
+        );
 
         gestor.registrarMaterial(libroDigital);
+        System.out.println("Libro digital registrado exitosamente.");
+
+    } catch (NumberFormatException e) {
+        System.out.println("Error: Debe de ser un número (decimal o entero) valido para el tamaño (MB) y año.");
+    } catch (Exception e) {
+        System.out.println("Ocurrió un error inesperado: " + e.getMessage());
     }
+}
 
     private static void prestarMaterial() {
 
