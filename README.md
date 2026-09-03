@@ -6,11 +6,22 @@
 1. [Descripción](#descripción)
 1. [Tipos de Material](#tipos-de-material)
 1. [Organización del proyecto](#organización-del-proyecto)
-2. [Paquetes](#paquete)
+2. [Paquetes](#paquete-modelo)
    - [Paquete Modelo](#paquete-modelo)
    - [Paquete Interfaces](#paquete-interfaces)
    - [Paquete Servicio](#paquete-servicio)
    - [Paquete Principal](#paquete-principal)
+1. [Requisitos](#requisitos)
+1. [Compilación](#compilación)
+1. [Ejecución](#ejecución)
+1. [Funcionalidades](#funcionalidades)
+2. [Conceptos de POO evidenciados](#conceptos-de-poo-evidenciados)
+   - [Encapsulamiento](#encapsulamiento)
+   - [Sobrecarga](#sobrecarga)
+   - [Herencia](#herencia)
+   - [Clase abstracta](#clase-abstracta)
+   - [Interfaces](#interfaces)
+   - [Polimorfismo](#polimorfismo)
 
 </details>
 
