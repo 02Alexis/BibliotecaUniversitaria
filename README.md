@@ -88,6 +88,7 @@ src/
     └── Main.java
 ```
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ### Paquete `modelo`
 
 Contiene las clases que representan los materiales bibliográficos.
@@ -156,6 +157,7 @@ Sin embargo, la forma recomendada para ejecutar el proyecto completo y respetar 
 java principal.Main
 ```
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ## Menú de la aplicación
 
 Al ejecutar el programa se muestra el siguiente menú:
@@ -173,6 +175,7 @@ Al ejecutar el programa se muestra el siguiente menú:
 0. Salir
 ```
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ### Funcionalidades
 
 **1. Registrar libro**
@@ -226,7 +229,9 @@ Muestra la cantidad total de materiales creados durante la ejecución mediante e
 **0. Salir**
 
 Finaliza la aplicación.
+
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
 ## Conceptos de POO evidenciados
 
 ### Encapsulamiento
@@ -322,4 +327,5 @@ Para comprobar el funcionamiento completo se recomienda:
 **Laboratorio 1 — Programación Orientada a Objetos**
 
 **Facultad de Ingeniería — 2026/2**
+
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
