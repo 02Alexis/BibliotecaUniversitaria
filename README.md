@@ -22,6 +22,7 @@
    - [Clase abstracta](#clase-abstracta)
    - [Interfaces](#interfaces)
    - [Polimorfismo](#polimorfismo)
+1. [Diagrama UML](#diagrama-uml)
 
 </details>
 
@@ -313,6 +314,14 @@ Para comprobar el funcionamiento completo se recomienda:
 9. Descargar un libro digital.
 10. Consultar las estadísticas.
 11. Salir de la aplicación.
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+## Diagrama UML
+
+<img width="1600" height="852" alt="WhatsApp Image 2026-08-25 at 12 09 20 PM" src="https://github.com/user-attachments/assets/8131ddc2-b6ac-4d11-84da-8cd0b2cc6cbf" />
+
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## Autores
 
